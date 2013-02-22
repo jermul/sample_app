@@ -81,6 +81,9 @@ p {
   }
 }
 
+header {
+
+}
 /* footer */
 
 footer {
@@ -241,5 +244,46 @@ aside {
   textarea {
     height: 100px;
     margin-bottom: 5px;
+  }
+}
+
+/* products */
+.products {
+  
+  table tr td {
+    padding:        5px;
+    vertical-align: top;
+  }
+
+  .list_image {
+    width:  70px;
+    height: 75px;
+  }
+
+  .list_description {
+    width: 60%;
+
+    dl {
+      margin: 0;
+    }
+
+    dt {
+      font-weight: bold;
+      font-size:   larger;
+    }
+
+    dd {
+      margin: 0;
+    }
+  }
+
+  .list_actions {
+    font-size:    small;
+    text-align:   right;
+    padding-left: 1em;
+  }
+
+  .list_line_even {
+    background: $grayLighter;
   }
 }
