@@ -27,7 +27,7 @@ Product.create(title: 'Little Okins',
         enclosed in a painted eggshell that will reveal your personal 
         message once cracked open.
       </p>},
-  image_url: 'okins.jpg',
+  image_url: 'Okins.jpg',
   price: 20.00)
 
 Product.create(title: 'Programming Ruby 1.9',
