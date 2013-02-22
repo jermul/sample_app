@@ -1,5 +1,7 @@
 SampleApp::Application.routes.draw do
   
+  get "store/index"
+
   resources :products
   resources :users do
     member do
@@ -15,7 +17,7 @@ SampleApp::Application.routes.draw do
   match '/signin',  to: 'sessions#new'
   match '/signout', to: 'sessions#destroy', via: :delete
 
-  root to: 'static_pages#home'
+  root to: 'store#index' #static_pages#home'
 
   match '/signup',  to: 'users#new'
 
