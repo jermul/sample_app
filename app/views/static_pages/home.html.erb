@@ -17,14 +17,7 @@
     </div>
   </div>  
 <% else %>
-  
-  <h1><%= link_to image_tag("Logo.jpg", alt: "ETSY"), 'http://www.etsy.com/shop/LittleOkins' %></h1>
   <div class="center">
-     The coolest gift for any happy occasion!
-    <p><br />
-    <br />
-    <%= link_to "Shop Now!", products_path, 
-                                class: "btn btn-large btn-primary" %></p>
+    <%= link_to "Shop Now!", store_path, class: "btn btn-large btn-primary" %></p>
   </div>
-
 <% end %> 
