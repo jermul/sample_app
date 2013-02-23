@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 2em;
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
@@ -58,7 +58,7 @@ h2 {
 }
 
 p {
-  font-size: 1.1em;
+  font-size: 1.2em;
   line-height: 1.7em;
 }
 
@@ -81,9 +81,6 @@ p {
   }
 }
 
-header {
-
-}
 /* footer */
 
 footer {
@@ -247,7 +244,7 @@ aside {
   }
 }
 
-/* products */
+/* Editable product listings */
 .products {
   
   table tr td {
@@ -261,20 +258,9 @@ aside {
   }
 
   .list_description {
-    width: 60%;
+    width: 780px;
 
-    dl {
-      margin: 0;
-    }
-
-    dt {
-      font-weight: bold;
-      font-size:   larger;
-    }
-
-    dd {
-      margin: 0;
-    }
+    
   }
 
   .list_actions {
@@ -307,7 +293,7 @@ aside {
     min-height: 100px;
 
     img {
-      width: 80px; margin-right: 5px; 
+      width: 80px; margin-right: 15px; 
       margin-bottom: 5px; 
       position: absolute;
     }
@@ -325,16 +311,35 @@ aside {
       margin-left: 100px; 
       margin-top: 0.5em; 
       margin-bottom: 0.8em;
+
+      form, div {
+        display: inline;
+      }
     }
       
     .price {
-      color: #44a; 
+      color: #44a;
+      font-size: 150%; 
       font-weight: bold; 
       margin-right: 3em;
     }
   }
 }  
 
+/* Shopping Cart */
+.carts {
+  .cart_title {
+    font: 120% bold;
+  }
 
+  .item_price, .total_line {
+    text-align: right;
+  }
+
+  .total_line .total_cell {
+    font-weight: bold;
+    border-top: 1px solid #595;
+  }
+}
 
 
