@@ -69,14 +69,14 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: $yellow;
+  color: $blue;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
   line-height: 1;
   &:hover {
-    color: white;
+    color: $btnInfoBackground;
     text-decoration: none;
   }
 }
@@ -339,6 +339,11 @@ aside {
   .total_line .total_cell {
     font-weight: bold;
     border-top: 1px solid #595;
+  }
+
+  .btn {
+    float: left;
+    margin-right: 5px;
   }
 }
 

@@ -1,5 +1,8 @@
 SampleApp::Application.routes.draw do
   
+  resources :orders
+
+
   resources :line_items
 
 
@@ -8,7 +11,10 @@ SampleApp::Application.routes.draw do
 
   get "store/index"
 
-  resources :products
+  resources :products do
+    get :who_bought, on: :member
+  end
+  
   resources :users do
     member do
       get :following, :followers
