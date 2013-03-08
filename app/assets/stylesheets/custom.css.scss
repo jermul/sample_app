@@ -76,7 +76,7 @@ p {
   font-weight: bold;
   line-height: 1;
   &:hover {
-    color: $btnInfoBackground;
+    color: $white;
     text-decoration: none;
   }
 }
@@ -105,17 +105,19 @@ footer {
       margin-left: 10px;
     }
   }
+}
 
   /* miscellaneous */
 
-  .debug_dump {
-    clear: both;
-    float: left;
-    width: 100%;
-    margin-top: 45px;
-    @include box_sizing;
-  }
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
 }
+
+/* sidebar */
 
 /* sidebar */
 
@@ -141,6 +143,12 @@ aside {
     }
   }
 }
+
+.gravatar {
+  float: left;
+  margin-right: 10px;
+}
+
 .stats {
   overflow: auto;
   a {
@@ -169,10 +177,6 @@ aside {
     margin: 1px 1px;
   }
 }
-.gravatar {
-  float: left;
-  margin-right: 10px;
-}
 
 /* forms */
 
@@ -199,9 +203,9 @@ input {
 .field_with_errors {
   @extend .control-group;
   @extend .error;
- }
+}
 
- /* users index */
+/* users index */
 
 .users {
   list-style: none;
@@ -244,36 +248,6 @@ aside {
   }
 }
 
-/* Editable product listings */
-.products {
-  
-  table tr td {
-    padding:        5px;
-    vertical-align: top;
-  }
-
-  .list_image {
-    width:  80px;
-    height: 85px;
-  }
-
-  .list_description {
-    width: 780px;
-
-    
-  }
-
-  .list_actions {
-    font-size:    small;
-    text-align:   right;
-    padding-left: 1em;
-  }
-
-  .list_line_even {
-    background: $grayLighter;
-  }
-}
-
 /* store */
 
 .store { 
@@ -281,15 +255,15 @@ aside {
     margin: 0; 
     padding-bottom: 0.5em; 
     font: 150% sans-serif; 
-    color: #226;
-    border-bottom: 3px dotted #77d; 
+    color: #227;
+    border-bottom: 3px solid $blue; 
   }
 
 /* An entry in the store catalog */
   .entry {
     overflow: auto;
     margin-top: 1em;
-    border-bottom: 1px dotted #77d; 
+    border-bottom: 1px dotted $blue; 
     min-height: 100px;
 
     img {
@@ -318,7 +292,7 @@ aside {
     }
       
     .price {
-      color: #44a;
+      color: #227;
       font-size: 150%; 
       font-weight: bold; 
       margin-right: 3em;

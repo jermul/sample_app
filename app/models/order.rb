@@ -4,6 +4,10 @@ class Order < ActiveRecord::Base
   has_many :line_items, dependent: :destroy
   PAYMENT_TYPES = [ "Check", "Credit Card", "Purchase order"]
   validates :name, :address, :email, presence: true
+  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+  validates :email, presence:   true,
+                    format:     { with: VALID_EMAIL_REGEX },
+                    uniqueness: { case_sensitive: false }
   validates :pay_type, inclusion: PAYMENT_TYPES
 
   def add_line_items_from_cart(cart)
